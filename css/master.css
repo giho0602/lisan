@@ -1,0 +1,293 @@
+@import url('reset.css');
+/* 리셋 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section{
+    position: relative;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.gnb{
+    display: flex;
+}
+
+.gnb li{
+    margin: 30px 10px;
+    display: inline-block;
+}
+
+.tel p{
+    margin: 30px 0;
+}
+
+.gnb li:hover{
+    color: rgb(183, 135, 99);
+}
+
+.main-content{
+    width: 100%;
+    background: #010e43;
+    position: relative;
+    padding: 100px 0 0 0;
+}
+
+.main-text{
+    color: #fff;
+    position: absolute;
+    left: 250px;
+    top: 220px;
+}
+
+.main-text h3{
+        font-size: 1.5em;
+}
+
+.main-text h1{
+    font-size: 2.800em;
+}
+
+.section02{
+    background-image: url(../images/pre-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+.sec02_title{
+    text-align: center;
+}
+
+.sec02_title h1{
+    font-size: 3em;
+    margin: 10px 0;
+    color: #000E42;
+    font-weight: 400;
+}
+
+.sec02_title p{
+    font-size: 1.5em;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #888684;
+}
+
+.row-content{
+    margin-top: 100px;
+    display: flex;
+}
+
+.w-25{
+    width: 25%;
+}
+
+.w-25 img{
+    width: 100%;
+}
+
+.sec02-content-title{
+    margin: 15px 0;
+    font-size: 1.8em;
+    text-align: center;
+    color: #000E42;
+}
+
+.sec02-content-sub-title{
+    margin: 10px 0;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: -1px;
+    color: #888684;
+    line-height: 25px;
+}
+
+.center-margin{
+    margin: 0 10px;
+}
+
+.section03{
+    padding: 100px 0;
+}
+
+.sec03_title{
+    text-align: center;
+}
+
+.sec03_title h3{
+    font-size: 2em;
+    padding: 10px 0;
+}
+
+.sec03_title h1{
+    font-size: 2.1em;
+    margin: 10px 0;
+}
+
+.sec03_title p{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.sec03_bg_1{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.sec03_bg_2{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.sec03_bg_3{
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+.sec03_slider{
+    margin: 40px 0;
+    scroll-behavior: smooth;
+}
+
+.sec03_bg_1 h1{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 2.4em;
+}
+
+.sec03_bg_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrap{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sec04-tab-content{
+    display: flex;
+}
+
+.sec04-tab-01{
+    width: 50%;
+    text-align: center;
+    background: black;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 30px 0;
+}
+
+.sec04-tab-02{
+    width: 50%;
+    text-align: center;
+    padding: 30px 0;
+    border: 1px solid #ccc;
+}
+
+.sec04_title{
+    text-align: center;
+}
+
+.sec04_title h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.sec04-tab2{
+    display: none;
+}
+
+.sec04-tab2{
+    width: 100%;
+}
+
+.sec04-tab2-img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec04-tab2-img img{
+    width: 100%;
+}
+
+@media(max-width: 1700px){
+    .main-img img{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px){
+    .main-img img{
+        display: none;
+    }
+    .main-content{
+        padding: 20% 0;
+    }
+    .main-text{
+        position: static;
+    }
+}
+
+@media(max-width: 797px){
+    .gnb{
+        display: none;
+    }
+}
+
+@media(max-width: 540px){
+    .main
+    .row-content{
+        flex-wrap: wrap;
+    }
+    .w-25{
+        width: 50%;
+    }
+    .center-margin{
+        margin: 0;
+    }
+    .w-25 img{
+        width: 95%;
+    }
+    .sec02-content-title{
+        margin: 30px 6px;
+    }
+}
